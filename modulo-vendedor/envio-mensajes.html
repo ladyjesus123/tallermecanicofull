@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesvendedor.css">
+    <title>Envío de Mensajes</title>
+</head>
+<body>
+    <header>
+        <h1>Taller Mecánico - Envío de Mensajes</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Módulos</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="vendedor.html">Perfil del Vendedor</a></li>
+                <li><a href="alertas-autorizaciones.html">Alertas de Autorizaciones</a></li>
+                <li><a href="envio-mensajes.html">Envío de Mensajes</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Lista de Clientes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cliente A</td>
+                        <td>1234-5678</td>
+                        <td>
+                            <button onclick="window.open('https://wa.me/12345678?text=¡Hola! Te invitamos a nuestro taller mecánico.')">Enviar Mensaje por WhatsApp</button>
+                        </td>
+                    </tr>
+                    <!-- Más filas de clientes aquí -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Taller Mecánico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

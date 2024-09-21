@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesinspeccion.css">
+    <title>Registro de Inspección</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de Inspección</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="inspeccion.html">Inspección</a></li>
+                <li><a href="lista-inspeccion.html">lista de Inspección</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h2>Registrar Nueva Inspección</h2>
+            <form>
+                <label for="num_inspeccion">Número de Inspección:</label>
+                <input type="text" id="num_inspeccion" required>
+                
+                <label for="datos_moto">Datos Moto (Chasis):</label>
+                <input type="text" id="datos_moto" required>
+                
+                <label for="tipo_servicio">Tipo de Servicio:</label>
+                <input type="text" id="tipo_servicio" required>
+                
+                <h3>Partes a Inspeccionar:</h3>
+                <label><input type="checkbox"> Retrovisores</label>
+                <label><input type="checkbox"> Luces</label>
+                <label><input type="checkbox"> Nivel de Combustible</label>
+                <!-- Agregar más partes según sea necesario -->
+                
+                <label for="observaciones">Observaciones:</label>
+                <textarea id="observaciones" rows="4"></textarea>
+
+                <button type="button">Generar Ticket de Trabajo</button>
+                <button type="submit">Guardar</button>
+                <button type="button" onclick="window.location.href='inspeccion.html'">Cancelar</button>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Taller Mecánico</p>
+    </footer>
+</body>
+</html>

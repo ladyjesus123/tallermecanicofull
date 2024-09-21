@@ -1,0 +1,115 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Asegura que el body ocupe toda la altura */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex: 1; /* Permite que el contenedor principal ocupe el espacio disponible */
+}
+
+.sidebar {
+    width: 250px;
+    background: #444;
+    color: #fff;
+    padding: 15px;
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1; /* Permite que el contenido principal ocupe el resto del espacio */
+    padding: 20px;
+}
+
+footer {
+    height: 60px; /* Ajusta según la altura de tu footer */
+    background: #333;
+    color: #fff;
+    text-align: center;
+    position: relative; /* Asegura que el footer se mantenga al final del contenedor */
+}
+
+/* Estilos para los formularios */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="date"], 
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #5cb85c; /* Color verde para los botones */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos específicos para los botones en informes.html y subpáginas */
+button.generar-informe {
+    display: inline-block;
+    margin: 10px 0;
+}

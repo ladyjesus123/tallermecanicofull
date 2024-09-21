@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesvendedor.css">
+    <title>Alertas de Autorizaciones</title>
+</head>
+<body>
+    <header>
+        <h1>Taller Mecánico - Alertas de Autorizaciones</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Módulos</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="vendedor.html">Perfil del Vendedor</a></li>
+                <li><a href="alertas-autorizaciones.html">Alertas de Autorizaciones</a></li>
+                <li><a href="envio-mensajes.html">Envío de Mensajes</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Alertas de Autorizaciones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Orden de Trabajo</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OT-001</td>
+                        <td>Requiere Autorización</td>
+                        <td>
+                            <button onclick="alert('Autorización concedida para OT-001')">Autorizar</button>
+                        </td>
+                    </tr>
+                    <!-- Más filas de órdenes aquí -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Taller Mecánico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

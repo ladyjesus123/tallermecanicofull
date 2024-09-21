@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesinspeccion.css">
+    <title>Lista de Inspecciones</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Inspecciones</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="inspeccion.html">Inspección</a></li>
+                <li><a href="registro-inspeccion.html">registro de Inspección</a></li>
+
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h2>Lista de Inspecciones</h2>
+            <input type="text" placeholder="Buscar Inspección...">
+            <button onclick="window.location.href='registro_inspeccion.html'">Nueva Inspección</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número de Inspección</th>
+                        <th>Chasis</th>
+                        <th>Tipo de Servicio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarían las filas dinámicamente -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Taller Mecánico</p>
+    </footer>
+</body>
+</html>

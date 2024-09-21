@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de Ticket de Costos</title>
+    <link rel="stylesheet" href="stylestickets.css">
+</head>
+<body>
+    <header>
+        <h1>Creación de Ticket de Costos</h1>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tickets.html">Tickets de Costos</a></li>
+                <li><a href="lista-tickets.html">Lista de Tickets</a></li>
+                <li><a href="crear-ticket.html">Crear Ticket</a></li>
+                <!-- Enlaces a otros módulos -->
+            </ul>
+        </nav>
+        <div class="main-content">
+            <h2>Crear Ticket de Costos</h2>
+            <form>
+                <label for="numero-ticket">Número de Ticket:</label>
+                <input type="text" id="numero-ticket" required>
+                
+                <label for="datos-cliente">Datos del Cliente:</label>
+                <input type="text" id="datos-cliente" required>
+                
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" required>
+                
+                <button type="submit">Guardar</button>
+                <button type="button" onclick="window.location='lista-tickets.html'">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Taller Mecánico</p>
+    </footer>
+</body>
+</html>

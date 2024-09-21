@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesmecanico.css">
+    <title>Reporte del Mecánico</title>
+</head>
+<body>
+    <header>
+        <h1>Reporte del Mecánico</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Módulos</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="mecanico.html">Reporte del Mecánico</a></li>
+                
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Crear Reporte del Mecánico</h2>
+            <form>
+                <label for="ordenTrabajo">Orden de Trabajo:</label>
+                <input type="text" id="ordenTrabajo" name="ordenTrabajo" required><br><br>
+
+                <label for="numeroInspeccion">Número de Inspección:</label>
+                <input type="text" id="numeroInspeccion" name="numeroInspeccion" required><br><br>
+
+                <label for="fechaHora">Fecha y Hora de Recepción:</label>
+                <input type="datetime-local" id="fechaHora" name="fechaHora" required><br><br>
+
+                <label for="observaciones">Observaciones:</label><br>
+                <textarea id="observaciones" name="observaciones" rows="4" required></textarea><br><br>
+
+                <label for="diagnostico">Diagnóstico Inicial:</label><br>
+                <textarea id="diagnostico" name="diagnostico" rows="4" required></textarea><br><br>
+
+                <label for="proceso">Proceso:</label><br>
+                <textarea id="proceso" name="proceso" rows="4" required></textarea><br><br>
+
+                <label for="repuestos">Solicitud de Repuestos o Insumos:</label><br>
+                <textarea id="repuestos" name="repuestos" rows="4" required></textarea><br><br>
+
+                <label for="autorizacion">Autorización de Trabajos Extras:</label><br>
+                <textarea id="autorizacion" name="autorizacion" rows="4" required></textarea><br><br>
+
+                <label for="solucion">Solución Final:</label><br>
+                <textarea id="solucion" name="solucion" rows="4" required></textarea><br><br>
+
+                <label for="entrega">Entrega de Moto:</label><br>
+                <textarea id="entrega" name="entrega" rows="4" required></textarea><br><br>
+
+                <button type="submit">Guardar Reporte</button>
+                <button type="button" onclick="window.location.href='mecanico.html'">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Taller Mecánico</p>
+    </footer>
+</body>
+</html>

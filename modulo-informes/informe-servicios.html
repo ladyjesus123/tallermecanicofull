@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesinformes.css">
+    <title>Reporte de Servicios</title>
+</head>
+<body>
+    <header>
+        <h1>Reporte de Servicios</h1>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="informes.html">Generar Informes</a></li>
+                <li><a href="informe-clientes.html">Reporte de Clientes</a></li>
+                <li><a href="informe-tickets.html">Reporte de Tickets de Costo</a></li>
+                <li><a href="informe-inventario.html">Reporte de Inventario</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <h2>Generar Informe de Servicios</h2>
+            <form>
+                <label for="fecha-inicio">Fecha de Inicio:</label>
+                <input type="date" id="fecha-inicio" name="fecha-inicio" required>
+                
+                <label for="fecha-fin">Fecha de Fin:</label>
+                <input type="date" id="fecha-fin" name="fecha-fin" required>
+                
+                <label for="tipo">Tipo de Informe:</label>
+                <select id="tipo" name="tipo">
+                    <option value="diario">Diario</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="anual">Anual</option>
+                </select>
+
+                <button type="submit" class="generar-informe">Generar Informe</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Taller Mecánico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesmotos.css">
+    <title>Registro de Moto</title>
+</head>
+<body>
+    <header>
+        <h1>Taller Mecánico - Registro de Moto</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Módulos</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="motos.html">Módulo Motos</a></li>
+                <li><a href="lista-motos.html">Lista de Motos</a></li>
+                <li><a href="editar-moto.html">Editar Moto</a></li>
+                <li><a href="alerta-servicios.html">Alertas de Servicios</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Añadir Nueva Moto</h2>
+            <form>
+                <label for="fecha-venta">Fecha de Venta:</label>
+                <input type="date" id="fecha-venta" required>
+
+                <label for="numero-factura">Número de Factura:</label>
+                <input type="text" id="numero-factura" required>
+
+                <label for="motor">Motor:</label>
+                <input type="text" id="motor" required>
+
+                <label for="chasis">Chasis:</label>
+                <input type="text" id="chasis" required>
+
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" required>
+
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" required>
+
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" required>
+
+                <label for="anio">Año:</label>
+                <input type="number" id="anio" required>
+
+                <label for="cilindraje">Cilindraje:</label>
+                <input type="text" id="cilindraje" required>
+
+                <label for="kilometraje">Kilometraje:</label>
+                <input type="text" id="kilometraje" required>
+
+                <label for="tipo">Tipo:</label>
+                <input type="text" id="tipo" required>
+
+                <label for="fotos">Fotografías:</label>
+                <input type="file" id="fotos" accept="image/*" multiple required>
+
+                <button type="submit">Guardar</button>
+                <button type="button" onclick="window.location.href='lista-motos.html'">Cancelar</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Taller Mecánico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

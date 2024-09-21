@@ -1,0 +1,89 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 250px;
+    background: #444;
+    color: #fff;
+    padding: 15px;
+    position: fixed; /* Mantiene el sidebar fijo */
+    height: 100%; /* Asegura que el sidebar ocupe toda la altura */
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 270px; /* Deja espacio para el sidebar */
+}
+
+footer {
+    height: 60px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center;
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio arriba del botón */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}

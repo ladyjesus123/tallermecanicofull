@@ -1,0 +1,141 @@
+/* Estilos generales para el módulo de motos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background: #222;
+    color: #fff;
+    width: 200px;
+    padding: 20px;
+    height: 100vh; /* Para que ocupe toda la altura de la ventana */
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 20px; /* Espacio entre sidebar y contenido principal */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para formularios de Añadir Moto y Editar Moto */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Ancho máximo para los formularios */
+    margin: 20px auto; /* Centrar el formulario */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Fondo claro para el formulario */
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+button[type="button"] {
+    background-color: #d9534f; /* Color para el botón de cancelar */
+}
+
+button[type="button"]:hover {
+    background-color: #c9302c; /* Hover para el botón de cancelar */
+}
+
+/* Ajustes para tablas en la página de alerta de servicios */
+table {
+    margin-top: 20px; /* Espacio encima de la tabla */
+}

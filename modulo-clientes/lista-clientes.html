@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesclientes.css">
+    <title>Lista de Clientes</title>
+</head>
+<body>
+
+<header>
+    <h1>Taller Mecánico</h1>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Módulo de Clientes</h2>
+        <ul>
+            <li><a href="clientes.html">Página Principal</a></li>
+            <li><a href="lista-clientes.html">Lista de Clientes</a></li>
+            <li><a href="registro-cliente.html">Registrar Nuevo Cliente</a></li>
+            <li><a href="visualizacion-cliente.html">Visualizar Cliente</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Lista de Clientes</h2>
+        <button onclick="location.href='registro-cliente.html'">Añadir Cliente</button>
+        <input type="text" placeholder="Buscar Clientes...">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                    <th>NIT</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>lady castiblanco</td>
+                    <td>12345678</td>
+                    <td>barrio el calvario</td>
+                    <td>12345</td>
+                    <td>
+                        <button onclick="location.href='registro-cliente.html'">Editar</button>
+                        <button onclick="confirm('¿Está seguro de eliminar este cliente?')">Eliminar</button>
+                    </td>
+                </tr>
+                <!-- Más filas de clientes aquí -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Taller Mecánico</p>
+</footer>
+
+</body>
+</html>

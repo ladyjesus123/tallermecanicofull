@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Orden de Trabajo</title>
+    <link rel="stylesheet" href="stylesordenes.css">
+</head>
+<body>
+    <header>
+        <h1>Crear Orden de Trabajo</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="lista-ordenes.html">Lista de Órdenes de Trabajo</a></li>
+                <li><a href="crear-orden.html">Crear Nueva Orden</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Formulario de Orden de Trabajo</h2>
+            <form>
+                <label for="cliente-nit">NIT del Cliente:</label>
+                <input type="text" id="cliente-nit" placeholder="Ingrese NIT">
+                
+                <label for="cliente-telefono">Teléfono:</label>
+                <input type="text" id="cliente-telefono" placeholder="Ingrese Teléfono">
+                
+                <label for="cliente-direccion">Dirección:</label>
+                <input type="text" id="cliente-direccion" placeholder="Ingrese Dirección">
+                
+                <label for="moto">Seleccionar Moto:</label>
+                <select id="moto">
+                    <option value="">Seleccione una moto</option>
+                    <!-- Aquí irán las opciones de motos -->
+                </select>
+                
+                <label for="servicio">Seleccionar Servicio:</label>
+                <select id="servicio">
+                    <option value="">Seleccione un servicio</option>
+                    <option value="primer-servicio">Primer Servicio</option>
+                    <option value="servicio-menor">Servicio Menor</option>
+                    <!-- Otras opciones -->
+                </select>
+                
+                <button type="submit">Guardar</button>
+                <button type="button" onclick="window.location.href='lista-ordenes.html'">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Taller Mecánico</p>
+    </footer>
+</body>
+</html>

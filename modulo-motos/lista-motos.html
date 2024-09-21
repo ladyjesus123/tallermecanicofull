@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesmotos.css">
+    <title>Lista de Motos</title>
+</head>
+<body>
+    <header>
+        <h1>Taller Mecánico - Lista de Motos</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Módulos</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="motos.html">Módulo Motos</a></li>
+                <li><a href="registro-moto.html">Añadir Moto</a></li>
+                <li><a href="editar-moto.html">Editar Moto</a></li>
+                <li><a href="alerta-servicios.html">Alertas de Servicios</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Lista de Motos</h2>
+            <button onclick="window.location.href='registro-moto.html'">Añadir Moto</button>
+            <input type="text" placeholder="Buscar por Propietario">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chasis</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CH12345</td>
+                        <td>Marca A</td>
+                        <td>Modelo X</td>
+                        <td>
+                            <button onclick="window.location.href='editar-moto.html'">Editar</button>
+                            <button onclick="confirm('¿Está seguro de que desea eliminar esta moto?')">Eliminar</button>
+                        </td>
+                    </tr>
+                    <!-- Más filas de motos aquí -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Taller Mecánico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
